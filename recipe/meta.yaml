@@ -31,6 +31,7 @@ requirements:
     - hyperopt
     - numba >=0.57,<0.58
     - shap >=0.42,<0.43
+    - mapie ==0.8.3
     - glib
     - weasyprint
     - gtk3
