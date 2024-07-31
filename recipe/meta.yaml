@@ -30,7 +30,7 @@ requirements:
     - scikit-learn ==1.5.1
     - hyperopt
     - numba ==0.60.0
-    - shap ==0.46.0
+    - shap ==0.45.1
     - mapie ==0.8.6
     - glib
     - weasyprint
