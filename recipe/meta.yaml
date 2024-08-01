@@ -1,5 +1,5 @@
 {% set name = "robert" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/robert-{{ version }}.tar.gz
-  sha256: 15ddfcdceee1c7701e08d1d8a64f78b3ca353f9f1c8b58654f053f5a775f33f0
+  sha256: 3455c4c655fe8e075d8b8d2e668d83fd3c9004ee8b6f67cac0a7bcf2f4e4126a
 
 build:
   noarch: python
@@ -21,23 +21,19 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - pyyaml
-    - matplotlib-base >=3.7,<3.8
+    - pyyaml ==6.0.1
+    - matplotlib ==3.9.1
     - pandas ==2.2.2
     - numpy ==1.26.4
-    - progress
-    - seaborn
-    - scipy
+    - progress ==1.6
+    - seaborn ==0.13.2
+    - scipy ==1.14.0
     - scikit-learn ==1.5.1
-    - hyperopt
+    - hyperopt ==0.2.7
     - numba ==0.60.0
     - shap ==0.45.1
     - mapie ==0.8.6
-    - glib
-    - weasyprint
-    - gtk3
-    - pango
-    - mscorefonts
+    - weasyprint ==62.3
 
 test:
   imports:
